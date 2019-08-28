@@ -7,6 +7,8 @@ const fetch = require('node-fetch');
         secrets: ['GITHUB_TOKEN', 'HEROKU_AUTH_TOKEN']
     });
 
+    console.log(tools.context);
+
     // Only continue if this was a failure
     const deployState = tools.context.payload.deployment_status.state;
     if (deployState !== 'failure') {
