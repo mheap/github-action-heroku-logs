@@ -1,9 +1,10 @@
 {
   "name": "heroku-build-log",
   "private": true,
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
-    "start": "node ./index.js"
+    "start": "node ./index.js",
+    "build": "npx @vercel/ncc build && npx convert-action"
   },
   "dependencies": {
     "actions-toolkit": "^2.1.0",
