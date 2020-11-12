@@ -1,9 +1,9 @@
-name: 'Heroku Build Logs'
-description: 'Attach Heroku build logs on deployment failure'
-author: 'Michael Heap'
+name: Heroku Build Logs
+description: Attach Heroku build logs on deployment failure
+author: Michael Heap
 branding:
-  icon: 'mail'
-  color: 'orange'
+  icon: mail
+  color: orange
 runs:
-  using: 'docker'
-  image: 'Dockerfile'
+  using: node12
+  main: dist/index.js
